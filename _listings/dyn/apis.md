@@ -20,7 +20,17 @@ created: "2018-03-27"
 modified: "2018-03-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/dyn/apis.yaml
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: Dyn
+  description: Dyn helps companies monitor, control, and optimize online infrastructure
+    to improve end-user experience
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/dyn-logo.png
+  humanURL: ""
+  baseURL: https:///
+  tags: Bounces
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/dyn/reports-bounces-count-get.md
 x-common:
 - type: x-base
   url: https://api.dynect.net
