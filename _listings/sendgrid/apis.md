@@ -36,13 +36,12 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/suppression-bounces-email-get.md
-- name: SendGrid Delete Suppression Bounces Email
-  description: "**This endpoint allows you to remove an email address from your bounce
-    list.**\n\nA bounced email is when the message is undeliverable and then returned
-    to the server that sent it. This endpoint allows you to delete a single email
-    addresses from your bounce list. \n\nFor more information see: \n\n* [User Guide
-    > Bounces](https://sendgrid.com/docs/User_Guide/Suppressions/bounces.html) for
-    more information\n* [Glossary > Bounces](https://sendgrid.com/docs/Glossary/Bounces.html)\n*
+- name: SendGrid Get Suppression Bounces Email
+  description: "**This endpoint allows you to retrieve a specific bounce for a given
+    email address.**\n\nA bounced email is when the message is undeliverable and then
+    returned to the server that sent it.\n\nFor more information see: \n\n* [User
+    Guide > Bounces](https://sendgrid.com/docs/User_Guide/Suppressions/bounces.html)
+    for more information\n* [Glossary > Bounces](https://sendgrid.com/docs/Glossary/Bounces.html)\n*
     [Classroom > List Scrubbing Guide](https://sendgrid.com/docs/Classroom/Deliver/list_scrubbing.html)"
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sendgrid-logo.png
   humanURL: https://sendgrid.com/
@@ -50,7 +49,9 @@ apis:
   tags: Bounces
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/suppression-bounces-email-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/suppression-bounces-email-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/suppression-bounces-email-get-postman.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
