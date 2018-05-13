@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: Dyn
+  title: Dyn Retrieve Count of Email Bounces
   version: 1.0.0
+  description: Retrieving a total count of Email bounces using the API requires specific
+    syntax for the REST API.
 schemes:
 - http
 produces:
