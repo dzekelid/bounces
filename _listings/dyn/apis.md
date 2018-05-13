@@ -31,6 +31,16 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/dyn/reports-bounces-count-get.md
+- name: Dyn Retrieve Count of Email Bounces
+  description: Retrieving a total count of Email bounces using the API requires specific
+    syntax for the REST API.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/dyn-logo.png
+  humanURL: http://dyn.com/
+  baseURL: https://{host}//
+  tags: Bounces
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/dyn/reports-bounces-count-get.md
 x-common:
 - type: x-base
   url: https://api.dynect.net
