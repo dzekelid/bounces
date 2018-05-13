@@ -1,11 +1,14 @@
 ---
 swagger: "2.0"
 info:
-  title: SendGrid
-  description: 'The SendGrid Web API V3 Documentation. This is the entirety of the
-    documented v3 endpoints. We have updated all the descriptions, parameters, requests,
-    and responses. Authentication Every endpoint requires Authentication in the form
-    of an Authorization Header: Authorization: Bearer API_KEY'
+  title: SendGrid Delete Suppression Bounces Email
+  description: "**This endpoint allows you to remove an email address from your bounce
+    list.**\n\nA bounced email is when the message is undeliverable and then returned
+    to the server that sent it. This endpoint allows you to delete a single email
+    addresses from your bounce list. \n\nFor more information see: \n\n* [User Guide
+    > Bounces](https://sendgrid.com/docs/User_Guide/Suppressions/bounces.html) for
+    more information\n* [Glossary > Bounces](https://sendgrid.com/docs/Glossary/Bounces.html)\n*
+    [Classroom > List Scrubbing Guide](https://sendgrid.com/docs/Classroom/Deliver/list_scrubbing.html)"
   version: 1.0.0
 host: api.sendgrid.com
 basePath: /v3
