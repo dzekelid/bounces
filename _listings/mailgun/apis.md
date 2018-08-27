@@ -10,8 +10,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/612-mail_g
 x-kinRank: "8"
 x-alexaRank: "24750"
 tags: Bounces
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/mailgun/apis.md
 specificationVersion: "0.14"
 apis:
@@ -110,6 +110,47 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/mailgun/bouncesaddress-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/mailgun/bouncesaddress-get-openapi.md
+- name: Mailgun API - Bounce
+  x-api-slug: bouncesaddress-get
+  description: Fetches a single bounce event by a given email address. This is useful
+    to check if a given email address has bounced before.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/612-mail_gun.jpg
+  humanURL: http://mailgun.net
+  baseURL: https://api.mailgun.net/v2/
+  tags: Stack Network, SaaS, Technology, API Provider, API Provider, Emails, Messages,
+    Profiles, Emails, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/mailgun/bouncesaddress-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/mailgun/bouncesaddress-get-openapi.md
+- name: Mailgun API - Delete Bounce
+  x-api-slug: bouncesaddress-delete
+  description: Clears a bounce event.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/612-mail_gun.jpg
+  humanURL: http://mailgun.net
+  baseURL: https://api.mailgun.net/v2/
+  tags: Stack Network, SaaS, Technology, API Provider, API Provider, Emails, Messages,
+    Profiles, Emails, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/mailgun/bouncesaddress-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/mailgun/bouncesaddress-delete-openapi.md
+- name: Mailgun API - Add Bounce
+  x-api-slug: bounces-post
+  description: Adds a permanent bounce to the bounces table. Updates the existing
+    record if already here.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/612-mail_gun.jpg
+  humanURL: http://mailgun.net
+  baseURL: https://api.mailgun.net/v2/
+  tags: Stack Network, SaaS, Technology, API Provider, API Provider, Emails, Messages,
+    Profiles, Emails, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/mailgun/bounces-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/mailgun/bounces-post-openapi.md
 x-common:
 - type: x--net-library
   url: http://documentation.mailgun.com/libraries.html#c

@@ -7,8 +7,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/582-dyn.jp
 x-kinRank: "8"
 x-alexaRank: "20789"
 tags: Bounces
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/dyn/apis.md
 specificationVersion: "0.14"
 apis:
@@ -26,6 +26,19 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/dyn/reportsbounces-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/dyn/reportsbounces-get-openapi.md
+- name: Dyn - Retrieve Count of Email Bounces
+  x-api-slug: reportsbouncescount-get
+  description: Retrieving a total count of Email bounces using the API requires specific
+    syntax for the REST API.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/582-dyn.jpg
+  humanURL: http://dynect.net
+  baseURL: https:///
+  tags: DNS, DNS, DNS General, Stack Network, Technology, SaaS, Enterprise, ISP, internet,
+    Getting Started Example, API Provider, API Service Provider, Emails, Profiles,
+    Emails, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/dyn/reportsbouncescount-get-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://duckduckgo.api.gallery.streamdata.io

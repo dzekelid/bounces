@@ -7,11 +7,29 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgr
 x-kinRank: "9"
 x-alexaRank: "10000"
 tags: Bounces
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/apis.md
 specificationVersion: "0.14"
 apis:
+- name: SendGrid - Delete Suppression Bounces
+  x-api-slug: suppressionbounces-delete
+  description: "**This endpoint allows you to delete all of your bounces. You can
+    also use this endpoint to remove a specific email address from your bounce list.**\n\nA
+    bounced email is when the message is undeliverable and then returned to the server
+    that sent it.\n\nFor more information see: \n\n* [User Guide > Bounces](https://sendgrid.com/docs/User_Guide/Suppressions/bounces.html)
+    for more information\n* [Glossary > Bounces](https://sendgrid.com/docs/Glossary/Bounces.html)\n*
+    [Classroom > List Scrubbing Guide](https://sendgrid.com/docs/Classroom/Deliver/list_scrubbing.html)\n\nNote:
+    the `delete_all` and `emails` parameters should be used independently of each
+    other as they have different purposes."
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
+  humanURL: http://sendgrid.com
+  baseURL: https://api.sendgrid.com//v3
+  tags: API LIfeyclessss, Imports, Stack Network, Stack, Technology, SaaS, Emails,
+    Emails, Messages, Messages, Relative Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/suppressionbounces-delete-openapi.md
 - name: SendGrid - Get Suppression Bounces
   x-api-slug: suppressionbounces-get
   description: "**This endpoint allows you to retrieve all of your bounces.**\n\nA
@@ -28,6 +46,23 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/suppressionbounces-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/suppressionbounces-get-openapi.md
+- name: SendGrid - Delete Suppression Bounces Email
+  x-api-slug: suppressionbouncesemail-delete
+  description: "**This endpoint allows you to remove an email address from your bounce
+    list.**\n\nA bounced email is when the message is undeliverable and then returned
+    to the server that sent it. This endpoint allows you to delete a single email
+    addresses from your bounce list. \n\nFor more information see: \n\n* [User Guide
+    > Bounces](https://sendgrid.com/docs/User_Guide/Suppressions/bounces.html) for
+    more information\n* [Glossary > Bounces](https://sendgrid.com/docs/Glossary/Bounces.html)\n*
+    [Classroom > List Scrubbing Guide](https://sendgrid.com/docs/Classroom/Deliver/list_scrubbing.html)"
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
+  humanURL: http://sendgrid.com
+  baseURL: https://api.sendgrid.com//v3
+  tags: API LIfeyclessss, Imports, Stack Network, Stack, Technology, SaaS, Emails,
+    Emails, Messages, Messages, Relative Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/suppressionbouncesemail-delete-openapi.md
 - name: SendGrid - Get Suppression Bounces Email
   x-api-slug: suppressionbouncesemail-get
   description: "**This endpoint allows you to retrieve a specific bounce for a given
@@ -64,6 +99,22 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/mail-settingsbounce-purge-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/mail-settingsbounce-purge-get-openapi.md
+- name: SendGrid - Patch Mail Settings Bounce Purge
+  x-api-slug: mail-settingsbounce-purge-patch
+  description: |-
+    **This endpoint allows you to update your current bounce purge settings.**
+
+    This setting allows you to set a schedule for SendGrid to automatically delete contacts from your soft and hard bounce suppression lists.
+
+    Mail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid???s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
+  humanURL: http://sendgrid.com
+  baseURL: https://api.sendgrid.com//v3
+  tags: API LIfeyclessss, Imports, Stack Network, Stack, Technology, SaaS, Emails,
+    Emails, Messages, Messages, Relative Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/mail-settingsbounce-purge-patch-openapi.md
 - name: SendGrid - Get Mail Settings Forward Bounce
   x-api-slug: mail-settingsforward-bounce-get
   description: |-
@@ -82,6 +133,22 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/mail-settingsforward-bounce-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/mail-settingsforward-bounce-get-openapi.md
+- name: SendGrid - Patch Mail Settings Forward Bounce
+  x-api-slug: mail-settingsforward-bounce-patch
+  description: |-
+    **This endpoint allows you to update your current bounce forwarding mail settings.**
+
+    Activating this setting allows you to specify an email address to which bounce reports are forwarded.
+
+    Mail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid???s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
+  humanURL: http://sendgrid.com
+  baseURL: https://api.sendgrid.com//v3
+  tags: API LIfeyclessss, Imports, Stack Network, Stack, Technology, SaaS, Emails,
+    Emails, Messages, Messages, Relative Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/mail-settingsforward-bounce-patch-openapi.md
 - name: SendGrid - Get Mail Settings Bounce Purge
   x-api-slug: mail-settingsbounce-purge-get
   description: |-
@@ -100,6 +167,22 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/mail-settingsbounce-purge-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/mail-settingsbounce-purge-get-openapi.md
+- name: SendGrid - Patch Mail Settings Bounce Purge
+  x-api-slug: mail-settingsbounce-purge-patch
+  description: |-
+    **This endpoint allows you to update your current bounce purge settings.**
+
+    This setting allows you to set a schedule for SendGrid to automatically delete contacts from your soft and hard bounce suppression lists.
+
+    Mail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid???s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
+  humanURL: http://sendgrid.com
+  baseURL: https://api.sendgrid.com//v3
+  tags: API LIfeyclessss, Imports, Stack Network, Stack, Technology, SaaS, Emails,
+    Emails, Messages, Messages, Relative Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/mail-settingsbounce-purge-patch-openapi.md
 - name: SendGrid - Get Mail Settings Forward Bounce
   x-api-slug: mail-settingsforward-bounce-get
   description: |-
@@ -118,6 +201,90 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/mail-settingsforward-bounce-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/mail-settingsforward-bounce-get-openapi.md
+- name: SendGrid - Patch Mail Settings Forward Bounce
+  x-api-slug: mail-settingsforward-bounce-patch
+  description: |-
+    **This endpoint allows you to update your current bounce forwarding mail settings.**
+
+    Activating this setting allows you to specify an email address to which bounce reports are forwarded.
+
+    Mail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid???s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
+  humanURL: http://sendgrid.com
+  baseURL: https://api.sendgrid.com//v3
+  tags: API LIfeyclessss, Imports, Stack Network, Stack, Technology, SaaS, Emails,
+    Emails, Messages, Messages, Relative Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/mail-settingsforward-bounce-patch-openapi.md
+- name: SendGrid - Patch Mail Settings Forward Bounce
+  x-api-slug: mail-settingsforward-bounce-patch
+  description: |-
+    **This endpoint allows you to update your current bounce forwarding mail settings.**
+
+    Activating this setting allows you to specify an email address to which bounce reports are forwarded.
+
+    Mail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid???s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
+  humanURL: http://sendgrid.com
+  baseURL: https://api.sendgrid.com//v3
+  tags: API LIfeyclessss, Imports, Stack Network, Stack, Technology, SaaS, Emails,
+    Emails, Messages, Messages, Relative Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/mail-settingsforward-bounce-patch-openapi.md
+- name: SendGrid - Get Mail Settings Forward Bounce
+  x-api-slug: mail-settingsforward-bounce-get
+  description: |-
+    **This endpoint allows you to retrieve your current bounce forwarding mail settings.**
+
+    Activating this setting allows you to specify an email address to which bounce reports are forwarded.
+
+    Mail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid???s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
+  humanURL: http://sendgrid.com
+  baseURL: https://api.sendgrid.com//v3
+  tags: API LIfeyclessss, Imports, Stack Network, Stack, Technology, SaaS, Emails,
+    Emails, Messages, Messages, Relative Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/mail-settingsforward-bounce-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/mail-settingsforward-bounce-get-openapi.md
+- name: SendGrid - Patch Mail Settings Bounce Purge
+  x-api-slug: mail-settingsbounce-purge-patch
+  description: |-
+    **This endpoint allows you to update your current bounce purge settings.**
+
+    This setting allows you to set a schedule for SendGrid to automatically delete contacts from your soft and hard bounce suppression lists.
+
+    Mail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid???s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
+  humanURL: http://sendgrid.com
+  baseURL: https://api.sendgrid.com//v3
+  tags: API LIfeyclessss, Imports, Stack Network, Stack, Technology, SaaS, Emails,
+    Emails, Messages, Messages, Relative Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/mail-settingsbounce-purge-patch-openapi.md
+- name: SendGrid - Get Mail Settings Bounce Purge
+  x-api-slug: mail-settingsbounce-purge-get
+  description: |-
+    **This endpoint allows you to retrieve your current bounce purge settings.**
+
+    This setting allows you to set a schedule for SendGrid to automatically delete contacts from your soft and hard bounce suppression lists.
+
+    Mail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid???s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
+  humanURL: http://sendgrid.com
+  baseURL: https://api.sendgrid.com//v3
+  tags: API LIfeyclessss, Imports, Stack Network, Stack, Technology, SaaS, Emails,
+    Emails, Messages, Messages, Relative Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/mail-settingsbounce-purge-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/sendgrid/mail-settingsbounce-purge-get-openapi.md
 x-common:
 - type: x--net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html

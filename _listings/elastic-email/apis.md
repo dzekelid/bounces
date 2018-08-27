@@ -7,11 +7,25 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/586-elasti
 x-kinRank: "8"
 x-alexaRank: "50338"
 tags: Bounces
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/elastic-email/apis.md
 specificationVersion: "0.14"
 apis:
+- name: Elastic Email SMTP API - Bounced
+  x-api-slug: mailerlistbounced-get
+  description: This api will return you the list of email addresses which are currently
+    in your block list.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/586-elastic-email.jpg
+  humanURL: http://elasticemail.com
+  baseURL: http://api.elasticemail.com//
+  tags: Cloud, Target, Stack Network, Technology, SaaS, internet, API Provider, Emails,
+    Messages, Profiles, Emails, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/elastic-email/mailerlistbounced-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bounces/master/_listings/elastic-email/mailerlistbounced-get-openapi.md
 - name: Elastic Email SMTP API - Bounced
   x-api-slug: mailerlistbounced-get
   description: This api will return you the list of email addresses which are currently
